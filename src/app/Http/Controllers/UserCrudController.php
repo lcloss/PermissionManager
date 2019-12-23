@@ -130,11 +130,65 @@ class UserCrudController extends CrudController
                 'name'  => 'password',
                 'label' => trans('backpack::permissionmanager.password'),
                 'type'  => 'password',
+                'wrapperAttributes' => [
+                    'class' => 'form-group col-md-6',
+                ],
             ],
             [
                 'name'  => 'password_confirmation',
                 'label' => trans('backpack::permissionmanager.password_confirmation'),
                 'type'  => 'password',
+                'wrapperAttributes' => [
+                    'class' => 'form-group col-md-6',
+                ],
+            ],
+            [
+                'entity'    => 'profile',
+                'name'      => 'avatar',
+                'label'     => __('Avatar'),
+                'type'      => 'browse',
+            ],
+            [
+                'entity'    => 'profile',
+                'name'      => 'birthdate',
+                'label'     => __('Birthdate'),
+                'type'      => 'date',
+            ],
+            [
+                'entity'    => 'profile',
+                'name'      => 'resume',
+                'label'     => __('Resume'),
+                'type'      => 'ckeditor',
+            ],
+            [
+                'entity'    => 'profile',
+                'name'      => 'facebook_url',
+                'label'     => __('Facebook URL'),
+                'type'      => 'text',
+            ],
+            [
+                'entity'    => 'profile',
+                'name'      => 'linkedin_url',
+                'label'     => __('Linkedin URL'),
+                'type'      => 'text',
+            ],
+            [
+                'entity'    => 'profile',
+                'name'      => 'twitter_url',
+                'label'     => __('Twitter URL'),
+                'type'      => 'text',
+            ],
+            [
+                'entity'    => 'profile',
+                'name'      => 'instagram_url',
+                'label'     => __('Instagram URL'),
+                'type'      => 'text',
+            ],
+            [
+                'entity'    => 'profile',
+                'name'      => 'youtube_url',
+                'label'     => __('Youtube URL'),
+                'type'      => 'text',
             ],
             [
             // two interconnected entities
