@@ -43,6 +43,9 @@ class PermissionManagerServiceProvider extends ServiceProvider
 
         // publish translation files
         $this->publishes([__DIR__.'/resources/lang' => resource_path('lang/vendor/backpack')], 'lang');
+
+        // publish migrations files
+        $this->publishes([__DIR__.'/database/migrations' => database_path('migrations')], 'migrations');
     }
 
     /**
