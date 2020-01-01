@@ -45,6 +45,7 @@ php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvid
 3) Publish the config file & run the migrations
 ```bash
 php artisan vendor:publish --provider="Backpack\PermissionManager\PermissionManagerServiceProvider"
+php artisan migrate
 ```
 
 4) The package assumes it's ok to use ```App\Models\BackpackUser``` to administer Users. Use a different one if you'd like by changing the user model in the ```config/backpack/permissionmanager.php``` file. Any model you're using, make sure it's using the ```CrudTrait``` and ```HasRoles``` traits:
